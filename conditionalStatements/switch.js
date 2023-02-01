@@ -11,5 +11,3 @@ break;
     default: console.log("not recognized");
         break;
 }
-no
-age=90
