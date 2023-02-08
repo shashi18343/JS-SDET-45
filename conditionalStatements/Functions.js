@@ -17,8 +17,8 @@ let student2=function(name,roll){
     console.log(name +" has roll no  "+roll);   
 }
 student2('shashi2',2)
-*/
 
+*/
 //-------------------------------------------------------------------------------------
 
 /*
@@ -48,8 +48,8 @@ let student4=(name,roll)=>
 console.log(student4('shashi',4));
 */
 //or
-varia=a=>
-{
-    return a;
-}
-console.log(varia(4));
+// varia=a=>
+// {
+//     return a;
+// }
+// console.log(varia(4));

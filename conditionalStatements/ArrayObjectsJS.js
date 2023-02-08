@@ -1,8 +1,8 @@
 let arr1=[1,2,3,4,5,6,7,8,9]
 let arr2=[5,4,3,2,1]
 
-console.log(arr1)
-console.log(arr2);
+// console.log(arr1)
+// console.log(arr2);
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //concat
@@ -23,7 +23,7 @@ console.log(arr2);
 
 //pop
 // console.log(arr1); //will print the initial array
-// console.log(arr1.pop(2)); //will return the last element of array
+// console.log(arr1.pop()); //will return the last element of array
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -46,12 +46,12 @@ console.log(arr2);
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 function ageof(age) {
-    const items=[49,59,79];
+   // const items=[49,59,79];
     
-    //return age>3
+    return age>3
 }
 
-//find
+// find
 // console.log(arr1.find(ageof));  //4 Returns the value of the first element in the array where predicate is true, and undefined otherwise.
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -74,6 +74,7 @@ function ageof(age) {
 //sort()
 // console.log(arr1.sort((a,b)=>b-a));  // [9,8,7,6,5,4,3,2,1]  Sorts an array in place.
 // console.log(arr1.sort((a,b)=>a-b));  //[1,2,3,4,5,6,7,8,9]  Sorts an array in place.  
+console.log(arr1.sort((a,b)=>{return (a-b)}));
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -100,6 +101,5 @@ function ageof(age) {
 //lastIndexOf()
 // console.log(arr1.lastIndexOf(7));  //6 Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
 
-console.log(arr1.forEach());
