@@ -169,6 +169,7 @@ console.log(register.length);
 // console.log(Math.SQRT2);    //1.4142135623730951
 // console.log(Math.sqrt(16));   //4
 // console.log(Math.tan(Math.PI/4));  //floating point error
+
 // console.log(Math.sin(-Infinity));    //NaN
 // console.log(Math.sin(-0));   //-0
 // console.log(Math.sin(0));   //0
@@ -197,7 +198,7 @@ console.log(register.length);
 // console.log(date.toDateString().split(" "));
 
 //============================================================================================================================================
-
+/*
 //08/02/2023
 class person{
     constructor(fname,lname)
@@ -210,19 +211,19 @@ class person{
 
     
 static demo(){                    //static method
-    console.log(this.b);            //accessing static variable under static method
-    console.log(this.a);   //undefined         //accessing non static variable under static method
+    console.log(this.b);            // 60   //accessing static variable under static method
+    console.log(this.a);             //undefined     //accessing non static variable under static method
 
     //creation of an abject
     var p=new person()       //creating object reference using class name to access non-static variable under static method
-   console.log(p.a);        //accessing non static variable using object reference
+   console.log(p.a);        //50    //accessing non static variable using object reference
     
  }
 sample()                                    //non static method
 {
-    console.log(this.a);            //accessing non static variable under non static method
-    console.log(this.b);            //accessing static variable under non static method
-    console.log(person.a);          //accessing non static variable using class name
+    console.log(this.a);            // 50    //accessing non static variable under non static method  50
+   console.log(this.b);            // undefined   //accessing static variable under non static method
+   console.log(person.a);          // undefined    //accessing non static variable using class name
 }
 
 }
@@ -237,5 +238,166 @@ console.log(data1.fname);   //sk1
 console.log(data2,data1);   //person { a: 50, fname: 'sk2', lname: 'rk2' } person { a: 50, fname: 'sk1', lname: 'rk1' }
 console.log(person.b);      //60     static variable calling
 console.log(person.sample); //undefined     calling non static method using class name
-person.demo()               //calling static method using class name
-data1.sample()              //calling non static method using object reference 
+person.demo()               //  60 undefined 50  //  calling static method using class name
+data1.sample()              //50   undefined   undefined  // calling non static method using object reference 
+
+*/
+//==========================================================================================================================================
+// 09-02-2023
+// class student
+// {
+//     marks=80
+//     marks2=70
+//     get marks()
+//     {
+//         return this.marks
+//     }
+// }
+// studentData=new student()
+// studentData.marks=-10;
+// console.log(studentData.marks);//-10
+// console.log(studentData.marks2);//70
+//...............................................................
+// class student
+// {
+//     _marks=80
+//     marks2=70
+//     get marks()
+//     {
+//         return this._marks
+//     }
+// }
+// studentData=new student()
+// studentData.marks=-10;
+// console.log(studentData._marks);//80
+// console.log(studentData.marks2);//70
+//................................................................
+
+// class student
+// {
+//     $marks=80
+//     marks2=70
+//     get marks()
+//     {
+//         return this.$marks
+//     }
+// }
+// studentData=new student()
+// studentData.marks=-10;
+// console.log(studentData.marks);//
+// console.log(studentData.marks2);//
+// ------------------------------------------------------------------------------------------------------------------------------
+
+//Default patrameters
+//selecting default value from a dropdown(quantity=1)=>the default value will be selected as 1(any value from dropdown) in some dropdown
+/*
+function product(name,quantity) {
+    console.log(name+" has the quantity of "+quantity)
+  }
+  product('apple') //apple has the quantity of undefined
+  */
+
+
+// function product(name,quantity=1) {
+//   console.log(name+" has the quantity of "+quantity)
+// }
+// product('apple',3)  //apple has the quantity of 3
+
+// ------------------------------------------------------------------------------------------------------------------------------
+//Template literals
+
+//Ex-1
+/*
+function product(fullName,mobile,email,city,state) {
+         console.log(`user full name is = ${fullName} 
+user mobile number = ${mobile}
+user emailId is = ${email}
+user is from state = ${state}`)
+    }
+    product('parash nath',706324578,'nparas18343@gmail.com','sikkim')  //apple has the quantity of 3
+    
+o/p-
+user full name is =parash nath 
+user mobile number = 706324578
+user emailId is = nparas18343@gmail.com
+user is from state = undefined
+*/
+
+// Ex-2
+// function product(/*parameters*/fullName,mobile,email='nparas123@gmail.com',city,state) {
+//     console.log(`user full name is = ${fullName} 
+// user mobile number = ${mobile}
+// user emailId is = ${email}
+// user city is = ${city}
+// user is from state = ${state}`)
+// }
+// product(/*arguments*/'parash nath',706324578,'jalpaigudi','sikkim')
+
+//o/p-
+// user full name is = parash nath 
+// user mobile number = 706324578
+// user emailId is = sikkim
+// user is from state = undefined
+
+//Ex-3
+// function product(fullName,mobile,email,city,state='wb') {
+//     console.log(`user full name is = ${fullName} 
+// user mobile number = ${mobile}
+// user emailId is = ${email}
+// user city is = ${city}
+// user is from state = ${state}`)
+// }
+// product('parash nath',706324578,'nparas18343@gmail.com','jalpaigudi')  
+
+// o/p-
+// user full name is = parash nath 
+// user mobile number = 706324578
+// user emailId is = nparas18343@gmail.com
+// user city is = jalpaigudi
+// user is from state = wb
+
+//Ex-4 (using undefined concept)
+// function product(fullName,mobile,email='nparas18343@gmail.com',city,state='wb') {
+//     console.log(`user full name is = ${fullName} 
+// user mobile number = ${mobile}
+// user emailId is = ${email}
+// user city is = ${city}
+// user is from state = ${state}`)
+// }
+// product('parash nath',706324578,undefined,'jalpaigudi',undefined)  
+
+//o/p-
+// user full name is = parash nath 
+// user mobile number = 706324578
+// user emailId is = nparas18343@gmail.com
+// user city is = jalpaigudi
+// user is from state = wb
+
+
+
+    //object create using method overriding
+    // var person={
+    //     f_name: 'shashi',
+    //     l_name: 'kumar',
+
+    //     greeting: function(){
+    //         return (this.f_name+" "+this.l_name)
+    //     }
+    // }
+
+    // data1=Object.create(person)   //creating object using 'create' keyword
+    // console.log(data1.f_name); //shashi
+    // console.log(person.l_name); //kumar
+    // data1.f_name='sk'
+    // console.log(person.greeting()); //shashi kumar
+    // console.log(data1.greeting()); //sk kumar
+    
+   
+    //JavaScript Inheritance
+    class Moment extends Date {  
+        constructor() {  
+          super();  
+        }}  
+      var m=new Moment();  
+      console.log("Current date:");
+        console.log(m.getDate()+"-"+(m.getMonth()+1)+"-"+m.getFullYear());  
