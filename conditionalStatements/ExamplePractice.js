@@ -392,7 +392,8 @@ user is from state = undefined
     // console.log(person.greeting()); //shashi kumar
     // console.log(data1.greeting()); //sk kumar
     
-   
+
+   /*
     //JavaScript Inheritance
     class Moment extends Date {  
         constructor() {  
@@ -401,3 +402,9 @@ user is from state = undefined
       var m=new Moment();  
       console.log("Current date:");
         console.log(m.getDate()+"-"+(m.getMonth()+1)+"-"+m.getFullYear());  
+
+    o/p-
+    Current date:
+    10-2-2023
+
+        */

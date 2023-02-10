@@ -93,11 +93,11 @@ var PerOrgDetails={
     
 // }
 
-// var user=new user1("shashi",7063278,"btm",87)  //o/p--user1 { name: 'shashi', phone: 7063278, address: 'btm' }
-// console.log(user)//o/p--user1 { name: 'shashi', phone: 7063278, address: 'btm' }
+// var user=new user1("shashi",7063278,"btm",87)    //o/p--user1 { name: 'shashi', phone: 7063278, address: 'btm' }
+// console.log(user)                                //o/p--user1 { name: 'shashi', phone: 7063278, address: 'btm' }
 
 // var user=new user1("kumar")
-// console.log(user);//user1 { name: 'kumar', phone: undefined, address: undefined }
+// console.log(user);                               //user1 { name: 'kumar', phone: undefined, address: undefined }
 */
 
     
