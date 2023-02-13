@@ -71,7 +71,7 @@ index++
 //     }
 
 
-    //forof loof
+    //forof loop
     /*
     for (const index of array) {
         console.log(index);

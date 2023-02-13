@@ -1,4 +1,4 @@
-/*
+/*(DONE)
 CALLBACK FUNCTION
 A callback function can be defined as a function passed into another function as a parameter.
  Don't relate the callback with the keyword, as the callback is just a name of an argument that is passed to a function.

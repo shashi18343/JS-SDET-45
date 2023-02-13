@@ -1,5 +1,8 @@
-var arr=[15,7,56,41,48,2,9]
+//(DONE)  10-02-23
+//Print the prime numbers present in the array
 
+var arr=[15,7,56,41,48,2,9]
+let arr1=[]
 for(let i=0;i<arr.length;i++)
 {
     let count=0;
@@ -12,6 +15,8 @@ for(let i=0;i<arr.length;i++)
     }
     if(count==1)
     {
-        console.log(arr[i]);
+        arr1=arr1+arr[i]+" "
     }
+  
 }
+console.log("Prime numbers in the array are: "+arr1);

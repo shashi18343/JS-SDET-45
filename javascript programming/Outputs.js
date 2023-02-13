@@ -1,4 +1,4 @@
-//10/02/2023
+//10/02/2023(DONE)
 /*
 var a=10
 var b=20
@@ -41,3 +41,16 @@ console.log(fruits[0]);
 o/p-->2
 mango
 */
+
+/*
+(function() {a=b=c=5})
+console.log(b);
+
+o/p-->ReferenceError: b is not defined
+*/
+
+input=[{fname:"abc",address:"india"},
+{fname:"def",address:"europe"},
+{fname:"rst",address:"india"},
+{fname:"xyz",address:"europe"},
+{fname:"mno",address:"russia"}]

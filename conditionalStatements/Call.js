@@ -1,3 +1,4 @@
+//(DONE)
 //call
 //function borrowing
 //apply(),call(),bind() will be used ineith function
@@ -34,16 +35,16 @@ function greeting(g1,g2){
 
 
    
-//person.introduce.call(person2)  //function
-//console.log("3");
-//person2.session.call(person)
-//console.log("4");
-//console.log(greeting1.call(person,"hello","js")) //bind method
-// console.log("5");
+person.introduce.call(person2)  //function
+console.log("3");
+person2.session.call(person)
+console.log("4");
+console.log(greeting1.call(person,"hello","js")) //bind method
+console.log("5");
 //bind
-// var data1=greeting1.bind(person,"hello","js")
-// console.log(data1())
-//console.log("6");
+var data1=greeting1.bind(person,"hello","js")
+console.log(data1())
+console.log("6");
 //apply
 console.log(greeting1.apply(person,["hello","js"]))
 

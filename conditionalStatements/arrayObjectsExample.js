@@ -1,39 +1,39 @@
+//(DONE)
+// TYPE 1 : using object literal
 
-//TYPE 1 : using object literal
-/*
-var PerOrgDetails={
-//properties are different with diffrent values ,can create several properties as per our requirements
+// var PerOrgDetails={
+// properties are different with diffrent values ,can create several properties as per our requirements
 
-    per_name:'shashi',
-    per_mobile: 7063278343,
-    per_id: 'ORG123',
-    per_address: ['btm','2nd stage','bangalore'],
-    details: function () {
-       // return "details of the person in organization is";
-       // return this.per_name+"\n "+this.per_mobile+ "\n "+this.per_address;
-       return "per_name:"+this.per_name+"\n "+"this.per_mobile:"+ "\n "+"this.per_address:";
-    },
-    jobsummery : jobdetails = {
+//     per_name:'shashi',
+//     per_mobile: 7063278343,
+//     per_id: 'ORG123',
+//     per_address: ['btm','2nd stage','bangalore'],
+//     details: function () {
+//        // return "details of the person in organization is";
+//        // return this.per_name+"\n "+this.per_mobile+ "\n "+this.per_address;
+//        return "per_name:"+this.per_name+"\n "+"this.per_mobile:"+ "\n "+"this.per_address:";
+//     },
+//     jobsummery : jobdetails = {
 
-        companyname:"TESTyantra"
-    }
+//         companyname:"TESTyantra"
+//     }
 
-}
-/*
-//add data to existing object  
-//here method overriding is happening (no method overloading)
+// }
+
+// add data to existing object  
+// here method overriding is happening (no method overloading)
 // PerOrgDetails.company="ty"
 // console.log(PerOrgDetails.company);
 
-//modify data to existing object
+// modify data to existing object
 // PerOrgDetails.per_mobile=7063279000
 // console.log(PerOrgDetails.per_mobile);
 
-//delete data from existing object
+// delete data from existing object
 // delete PerOrgDetails.per_id  //delete command will delete the property in this line but still we vcan see the property in global menu when we inspect it(creation phase)
 // console.log(PerOrgDetails.per_id);  //this line will completely remove the property along with variable even in creation phase
 
-//fetch all the value from an existing array
+// fetch all the value from an existing array
 // for (const key in PerOrgDetails) {
 //    console.log(key+" = "+PerOrgDetails[key]);
 // }
@@ -45,10 +45,10 @@ var PerOrgDetails={
 // console.log(PerOrgDetails.details());   //prints function from an object
 // console.log(PerOrgDetails.jobsummery.companyname);   //printing the value of object within an object       o/p-TESTyantra
 // console.log(PerOrgDetails.jobsummery.jobdetails);   //printing the value of object within an object       o/p-undefined
+// console.log(PerOrgDetails.jobdetails);
 
-
-//TYPE 2 : using an Object constructor
-//can be used when we have definite properties that is applicable for all the instance created(values will be different only whereas property remains common)
+// TYPE 2 : using an Object constructor
+// can be used when we have definite properties that is applicable for all the instance created(values will be different only whereas property remains common)
 // function StudentDetails(name,id,salary,add,skills) {
 //     this.name=name;
 //     this.id=id;
@@ -77,8 +77,8 @@ var PerOrgDetails={
 // user.flatno="B/101"
 // console.log("apratmentname="+user.apratmentname+"phone="+user.phone+" rent="+user.rent+"deposit="+user.deposit+"location="+user.location+"address="+user.address);
 
-/*
-//funtion overloading is not possible in javascript
+
+// funtion overloading is not possible in javascript
 
 // function user1(name,phone) {
 //     this.name=name;
@@ -98,6 +98,6 @@ var PerOrgDetails={
 
 // var user=new user1("kumar")
 // console.log(user);                               //user1 { name: 'kumar', phone: undefined, address: undefined }
-*/
+
 
     
