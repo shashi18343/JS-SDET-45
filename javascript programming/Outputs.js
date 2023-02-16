@@ -54,3 +54,10 @@ input=[{fname:"abc",address:"india"},
 {fname:"rst",address:"india"},
 {fname:"xyz",address:"europe"},
 {fname:"mno",address:"russia"}]
+
+
+// var str="good morning"
+// var str1=str.split('o')
+// console.log(str1);
+
+// o/p->[ 'g', '', 'd m', 'rning' ]
