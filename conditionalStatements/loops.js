@@ -9,10 +9,10 @@ var arr2=new Array('shashi',789,'org')
 
 //foreach
 
-// array.forEach((index) => {
-//     console.log(index);
+array.forEach((index) => {
+    console.log(index);
     
-// });
+});
 
 
 // console.log(arr2);     //return the values in the from of array [ 'shashi', 789, 'org' ]
